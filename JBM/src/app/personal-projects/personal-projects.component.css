@@ -1,0 +1,66 @@
+.applications {
+  padding: 2%;
+  background-color: #EDE6E3;
+  width: 100%;
+  height: 100%; 
+
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+	left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.paycal {
+    background-color: #E9F259;
+    border: 7px solid;
+    /* border-radius: 10px; */
+    border-color: #D46CE7;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #D46CE7;
+    font-size: 80px;
+    font-family: 'Haike it';
+    text-align: center;
+}
+
+/* .paycal span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.paycal span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .paycal:hover span {
+    padding-right: 25px;
+  }
+  
+  .paycal:hover span:after {
+    opacity: 1;
+    right: 0;
+  } */
+
+  .motorracing {
+    background-color: white;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    /* position: relative; */
+    margin: 15px;
+    text-align: center;
+  }

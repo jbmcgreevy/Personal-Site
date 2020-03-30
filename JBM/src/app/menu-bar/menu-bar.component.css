@@ -1,0 +1,19 @@
+button {
+    font: 28px 'Arial', sans-serif;
+        /* color: white; */
+}
+
+a {
+    font: 22px 'Arial', sans-serif;
+}
+
+button.mat-menu-item{
+    font: 22px 'Arial', sans-serif;
+    /* background-color: purple; */
+}
+
+button.mat-menu-item:hover {
+    font: 22px 'Arial', sans-serif;
+    /* background-color: blue;
+    color: #fff !important; */
+}

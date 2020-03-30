@@ -1,0 +1,14 @@
+html {
+  text-align: center;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: -webkit-linear-gradient( to left top, #7b4397, #dc2430);
+  background: -moz-linear-gradient( to left top, #7b4397, #dc2430);
+  background: -ms-linear-gradient( to left top, #7b4397, #dc2430);
+  background: -o-linear-gradient( to left top, #7b4397, #dc2430);
+  background: linear-gradient( to left top, #7b4397, #dc2430);
+}
+

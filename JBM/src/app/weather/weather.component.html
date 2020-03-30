@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <!-- <div class="input">
+            <h1 class="text-center my-4"> Search for Weather: </h1>
+            <form 
+                [formGroup]="weatherSearchForm" (ngSubmit)="sendToMetaWeather(weatherSearchForm.value)">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="weatherLocation"
+                    aria-describedby="weatherLocation"
+                    placeholder="Please input a Location"
+                    formControlName="location" />
+                 </div>
+                 <div class="text-center"> 
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success btn-md">Search for the weather</button>
+                    </div>
+                 </div>
+            </form> 
+        </div> -->
+            <h1 class="text-center my-4"> Weather Details: </h1>
+            <img class="weatherImg" src={{this.imgURL}} >
+        <div class="stats">
+            <p class="text-center">Current weather conditions: {{this.weatherData?.consolidated_weather[0].weather_state_name}}</p>
+            <p class="text-center">Current Temperature: {{this.weatherData?.consolidated_weather[0].the_temp | degrees}}</p>
+            <p class="text-center">High Temperature: {{this.weatherData?.consolidated_weather[0].max_temp | degrees}}</p>
+            <p class="text-center">Low Temperature: {{this.weatherData?.consolidated_weather[0].min_temp | degrees}}</p>
+            <p class="text-center">Humidity level: {{this.weatherData?.consolidated_weather[0].humidity | percent}}</p>
+            <p class="text-center">Location Searched: {{this.weatherData?.title}}, {{this.weatherData?.parent.title}}</p>
+        </div>
+    </div>
+</div>

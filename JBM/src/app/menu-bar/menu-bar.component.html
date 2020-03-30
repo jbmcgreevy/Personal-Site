@@ -1,0 +1,16 @@
+<button mat-button [routerLink]="'/'">Home</button>
+
+<button mat-button [matMenuTriggerFor]="projects">Projects</button>
+
+<mat-menu #projects="matMenu">
+  <button mat-menu-item [routerLink]="'/projects'">All</button>
+  <button mat-menu-item>PayCal</button>
+  <a href="https://www.youtube.com/user/TheWashedBoys" mat-menu-item>Videos</a>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="more">More</button>
+
+<mat-menu #more="matMenu">
+  <button mat-menu-item [routerLink]="'/about'">About</button>
+  <button mat-menu-item [routerLink]="'/contact'">Contact</button>
+</mat-menu>

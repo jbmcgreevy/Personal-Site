@@ -1,0 +1,33 @@
+.body {
+    padding: 2%;
+    background-color: #EDE6E3;
+    width: 100%;
+    height: 100%; 
+  
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+      left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.about {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+
+.weather {
+    width: 50%;
+    float: left;
+}
+
+h1 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px
+}
