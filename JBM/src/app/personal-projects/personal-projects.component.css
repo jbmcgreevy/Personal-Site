@@ -30,13 +30,13 @@
     font-family: 'Haike it';
     text-align: center;
 }
-
-/* .paycal span {
+.paycal span {
     cursor: pointer;
     display: inline-block;
     position: relative;
+    line-height: normal;
     transition: 0.5s;
-}
+} 
 
 .paycal span:after {
     position: absolute;
@@ -44,23 +44,23 @@
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
 
-  .paycal:hover span {
-    padding-right: 25px;
-  }
+.paycal:hover span {
+  padding-right: 25px;
+}
   
-  .paycal:hover span:after {
-    opacity: 1;
-    right: 0;
-  } */
+.paycal:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
 
-  .motorracing {
-    background-color: white;
-    display:inline-block;
-    width: 200px;
-    height: 200px;
-    /* position: relative; */
-    margin: 15px;
-    text-align: center;
-  }
+.motorracing {
+  background-color: white;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  /* position: relative; */
+  margin: 15px;
+  text-align: center;
+}

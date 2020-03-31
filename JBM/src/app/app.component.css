@@ -15,19 +15,15 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 small {
-color: #333;
-}
-
-html {
-  height: 100%;
-  width: 100%;
+  color: #333;
 }
 
 .header {
   height: 30%;
   width: 99%;
-  position: absolute;
-  
+  position: relative;
+  text-align: center;
+  /* overflow: visible; */
 }
 
 .title {
@@ -68,7 +64,7 @@ html {
   width: 100%;
   height: 100%;
   /* -webkit-animation:vectro_effect 0.067s infinite; */
-  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px);
+  /* background: repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px); */
   border-radius: 5px;
 
   -webkit-touch-callout: none; /* iOS Safari */
@@ -144,16 +140,15 @@ html {
 }
 
 
-body { 
-  width: 50%;
-  height: 50%; 
-
+.routing { 
+  /* overflow: auto; */
+  width: 600px;
+  height: 500px; 
   border-radius: 5px;
-
-
-  position: fixed;
-  top: 30%;
+  position: relative;
+  top: 0;
 	left: 0;
   right: 0;
   margin: auto;
+  background-color: transparent !important;
 }

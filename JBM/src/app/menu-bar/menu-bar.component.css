@@ -1,19 +1,29 @@
 button {
     font: 28px 'Arial', sans-serif;
         /* color: white; */
+    outline: none;
 }
 
 a {
     font: 22px 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+a.mat-menu-itme:hover {
+    text-decoration: none;
+    color: black;
 }
 
 button.mat-menu-item{
     font: 22px 'Arial', sans-serif;
-    /* background-color: purple; */
 }
 
 button.mat-menu-item:hover {
     font: 22px 'Arial', sans-serif;
-    /* background-color: blue;
-    color: #fff !important; */
+}
+
+
+.at-focus-indicator, .mat-menu-item {
+    text-decoration: none;
+    color: black;
 }

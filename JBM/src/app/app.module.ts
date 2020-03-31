@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MetaweatherService } from './metaweather.service';
 import { DegreesPipe } from './degrees.pipe';
 import { PercentPipe } from './percent.pipe';
+import { F1Component } from './f1/f1.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PercentPipe } from './percent.pipe';
     ContactComponent,
     WeatherComponent,
     DegreesPipe,
-    PercentPipe
+    PercentPipe,
+    F1Component
   ],
   imports: [
     BrowserModule,
