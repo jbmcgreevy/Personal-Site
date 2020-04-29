@@ -20,6 +20,7 @@ import { MetaweatherService } from './metaweather.service';
 import { DegreesPipe } from './degrees.pipe';
 import { PercentPipe } from './percent.pipe';
 import { F1Component } from './f1/f1.component';
+import { CarComponent } from './car/car.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { F1Component } from './f1/f1.component';
     WeatherComponent,
     DegreesPipe,
     PercentPipe,
-    F1Component
+    F1Component,
+    CarComponent
   ],
   imports: [
     BrowserModule,
