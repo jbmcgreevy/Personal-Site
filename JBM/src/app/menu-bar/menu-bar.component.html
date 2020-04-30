@@ -5,7 +5,7 @@
 <mat-menu #projects="matMenu">
   <button mat-menu-item [routerLink]="'/projects'">All</button>
   <button mat-menu-item>PayCal</button>
-  <a href="https://www.youtube.com/user/TheWashedBoys" target="_blank" mat-menu-item>Videos</a>
+  <button mat-menu-item onclick=" window.open('https://www.youtube.com/user/TheWashedBoys','_blank')">Videos</button>
 </mat-menu>
 
 <button mat-button [matMenuTriggerFor]="more">More</button>

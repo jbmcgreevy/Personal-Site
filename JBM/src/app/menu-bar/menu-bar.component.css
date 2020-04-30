@@ -4,16 +4,6 @@ button {
     outline: none;
 }
 
-a {
-    font: 22px 'Arial', sans-serif;
-    text-decoration: none;
-}
-
-a.mat-menu-itme:hover {
-    text-decoration: none;
-    color: black;
-}
-
 button.mat-menu-item{
     font: 22px 'Arial', sans-serif;
 }
