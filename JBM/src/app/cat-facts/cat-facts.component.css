@@ -1,0 +1,60 @@
+.body {
+    padding: 2%;
+    background-color: rgb(180, 180, 255);
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.refresh {
+    margin: 15px;
+}
+
+.catImg {
+    width: 256px;
+    height: 256px;
+    border-radius: 13px;
+}
+
+.imgContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20pt;
+
+}
+
+.a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.text {
+    font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 10pt;
+}
+
+img.ng-lazyloaded { 
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; } 
+}

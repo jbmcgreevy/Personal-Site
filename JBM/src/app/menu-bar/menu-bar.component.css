@@ -4,6 +4,10 @@ button {
     outline: none;
 }
 
+:host ::ng-deep  .mat-menu-panel {
+    background-color: blue;
+}
+
 button.mat-menu-item{
     font: 22px 'Arial', sans-serif;
 }

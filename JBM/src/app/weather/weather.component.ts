@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { MetaweatherService } from '../metaweather.service';
+import { MetaweatherService } from '../_services/metaweather.service';
 
 
 @Component({

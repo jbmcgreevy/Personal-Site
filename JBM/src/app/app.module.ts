@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {  MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 import {  platformBrowserDynamic  } from '@angular/platform-browser-dynamic';
 import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,11 +18,12 @@ import { ContactComponent } from './contact/contact.component';
 import { WeatherComponent } from './weather/weather.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MetaweatherService } from './metaweather.service';
+import { MetaweatherService } from './_services/metaweather.service';
 import { DegreesPipe } from './degrees.pipe';
 import { PercentPipe } from './percent.pipe';
 import { F1Component } from './f1/f1.component';
 import { CarComponent } from './car/car.component';
+import { CatFactsComponent } from './cat-facts/cat-facts.component';
 
 
 @NgModule({
@@ -34,7 +37,8 @@ import { CarComponent } from './car/car.component';
     DegreesPipe,
     PercentPipe,
     F1Component,
-    CarComponent
+    CarComponent,
+    CatFactsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,9 @@ import { CarComponent } from './car/car.component';
     AppRoutingModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    LazyLoadImageModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

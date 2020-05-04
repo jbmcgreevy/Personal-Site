@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Formula1Service } from '../formula-1.service';
+import { Formula1Service } from '../_services/formula-1.service';
 
 @Component({
   selector: 'app-f1',

@@ -6,11 +6,17 @@ html, body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: -webkit-linear-gradient( to left top, #7b4397, #dc2430);
+  background: -webkit-linear-gradient( to left top, cyan, magenta);
+  background: -moz-linear-gradient( to left top, cyan, magenta);
+  background: -ms-linear-gradient( to left top, cyan, magenta);
+  background: -o-linear-gradient( to left top, cyan, magenta);
+  background: linear-gradient( to left top, cyan, magenta); 
+
+  /* background: -webkit-linear-gradient( to left top, #7b4397, #dc2430);
   background: -moz-linear-gradient( to left top, #7b4397, #dc2430);
   background: -ms-linear-gradient( to left top, #7b4397, #dc2430);
   background: -o-linear-gradient( to left top, #7b4397, #dc2430);
-  background: linear-gradient( to left top, #7b4397, #dc2430); 
+  background: linear-gradient( to left top, #7b4397, #dc2430);  */
 }
 
 .gradient {
@@ -21,3 +27,15 @@ html, body {
 h1, h2, h3 {
   font: 'Arial', sans-serif;
 }
+
+.mat-menu-panel {
+  background:  rgb(180, 180, 255);
+}
+
+.body {
+  --my-var: colorAverage(0, 255, 255, 255, 0, 255);
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
