@@ -4,7 +4,8 @@
             <img class="catImg" [defaultImage]="defaultImage" [lazyLoad]="image">
         </div>
         <div class="text">
-            <a>{{this.catData?.all[int].text}}</a>
+            <h2>Cat Facts!</h2>
+            <a class="fact">{{this.catData?.all[int].text}}</a>
             <br/>
             <button class="refresh" mat-raised-button color="primary" (click)="onClickMe()">MOAR FACTS!</button>
         </div>

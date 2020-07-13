@@ -21,11 +21,9 @@
     </div> -->
     <img class="weatherImg" src={{this.imgURL}} >
     <div class="stats">
-        <p>Conditions: {{this.weatherData?.consolidated_weather[0].weather_state_name}}</p>
-        <p>Current Temp: {{this.weatherData?.consolidated_weather[0].the_temp | degrees}}</p>
-        <p>High: {{this.weatherData?.consolidated_weather[0].max_temp | degrees}}</p>
-        <p>Low: {{this.weatherData?.consolidated_weather[0].min_temp | degrees}}</p>
-        <p>Humidity level: {{this.weatherData?.consolidated_weather[0].humidity | percent}}</p>
-        <p>My Location: {{this.weatherData?.title}}, {{this.weatherData?.parent.title}}</p>
+        <p>Conditions: {{this.weatherData?.current.weather_descriptions[0]}}</p>
+        <p>Current Temp: {{this.weatherData?.current.feelslike | degrees}}</p>
+        <p>Humidity level: {{this.weatherData?.current.humidity | percent}}</p>
+        <p>My Location: {{this.weatherData?.location.name}}, {{this.weatherData?.location.region}}</p>
     </div>
 </div>

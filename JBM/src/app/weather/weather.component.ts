@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MetaweatherService } from '../_services/metaweather.service';
+import { WeatherStackService } from '../_services/weather-stack.service';
 
 
 @Component({
@@ -19,10 +20,11 @@ export class WeatherComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private metaWeatherService: MetaweatherService,
+    private weatherStackService: WeatherStackService,
     ) { }
 
   ngOnInit(): void {
-    this.getFromMetaWeather(2364559);
+    this.getFromWeatherStack('homewood');
     this.weatherSearchForm = this.formBuilder.group({
       location: ['']
     });
@@ -35,22 +37,19 @@ export class WeatherComponent implements OnInit {
     .subscribe(data => {this.locationData = data;
     this.id = this.locationData[0].woeid;
     console.log(this.id);
-    this.getFromMetaWeather(this.id)
+    this.getFromWeatherStack(this.id)
     });
   }
 
-  getFromMetaWeather(woeid) {
-    this.metaWeatherService
+  getFromWeatherStack(woeid) {
+    this.weatherStackService
     .getWeather(woeid)
     .subscribe(data => {this.weatherData = data;
     console.log(this.weatherData);
 
-    this.weatherData.consolidated_weather[0].the_temp = this.convertTemp(this.weatherData?.consolidated_weather[0].the_temp);
-    this.weatherData.consolidated_weather[0].min_temp = this.convertTemp(this.weatherData?.consolidated_weather[0].min_temp);
-    this.weatherData.consolidated_weather[0].max_temp = this.convertTemp(this.weatherData?.consolidated_weather[0].max_temp);
+    this.weatherData.current.feelslike = this.convertTemp(this.weatherData.current.feelslike);
 
-    this.imgURL = 'https://www.metaweather.com/static/img/weather/' + 
-      (this.weatherData?.consolidated_weather[0].weather_state_abbr) + '.svg';
+    this.imgURL = this.weatherData?.current.weather_icons[0];
     });
   }
 

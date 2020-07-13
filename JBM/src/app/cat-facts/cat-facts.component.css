@@ -58,3 +58,8 @@ img.ng-lazyloaded {
     from { opacity: 0; }
     to { opacity: 1; } 
 }
+
+.fact {
+    height: 20pt !important;
+    overflow: auto;
+}
