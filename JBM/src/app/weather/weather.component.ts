@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MetaweatherService } from '../_services/metaweather.service';
 import { WeatherStackService } from '../_services/weather-stack.service';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; 
 
 @Component({
   selector: 'app-weather',
@@ -28,7 +28,6 @@ export class WeatherComponent implements OnInit {
     this.weatherSearchForm = this.formBuilder.group({
       location: ['']
     });
-    this.imgURL = 'https://www.metaweather.com/static/img/weather/c.svg';
   }
 
   sendToMetaWeather(formValues) {
@@ -47,7 +46,7 @@ export class WeatherComponent implements OnInit {
     .subscribe(data => {this.weatherData = data;
     console.log(this.weatherData);
 
-    this.weatherData.current.feelslike = this.convertTemp(this.weatherData.current.feelslike);
+    this.weatherData.current.temperature = this.convertTemp(this.weatherData.current.temperature);
 
     this.imgURL = this.weatherData?.current.weather_icons[0];
     });
