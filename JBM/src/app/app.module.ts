@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {  MatMenuModule } from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 
@@ -52,7 +52,7 @@ import { CatFactsComponent } from './cat-facts/cat-facts.component';
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
-    MetaweatherService
+    MetaweatherService,
   ],
   bootstrap: [AppComponent]
 })

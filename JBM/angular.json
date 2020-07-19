@@ -260,5 +260,8 @@
       }
     }
   },
-  "defaultProject": "JBM"
+  "defaultProject": "JBM",
+  "cli": {
+    "analytics": false
+  }
 }

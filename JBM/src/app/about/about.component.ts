@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GitHubService } from '../_services/git-hub.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about',
